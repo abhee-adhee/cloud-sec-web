@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site 1 - Vulnerable Demo</title>
+</head>
+<body>
+    <h1>Welcome to Site 1</h1>
+    <p>This is a demonstration website for cybersecurity testing.</p>
+    <form method="GET" action="">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+    <?php
+    if(isset($_GET['search'])) {
+        echo "<p>You searched for: " . $_GET['search'] . "</p>";
+    }
+    ?>
+</body>
+</html>
+
